@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', 'sans-serif';
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  background-color: #333;
+  background-image: url(../img/Background_blur.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+}
+
+header > div {
+  height: 48px;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px;
+}
+
+
+main {
+  margin-top: 48px;
+  padding: 12px;
+}
+
+
+
+#buttons tbody {
+  display: none;
+}
+#buttons tbody[shown=true] {
+  display: table-row-group;
+}
+
+#buttons tr[pressed=true] {
+  background: #f00;
+}
+
+#buttons input {
+  background: transparent;
+}
+
+
+
+
+footer {
+  margin-top: 12px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+footer .copy {
+}
